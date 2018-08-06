@@ -1,0 +1,23 @@
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.exe.config
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.exe
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.pdb
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csprojResolveAssemblyReference.cache
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.Properties.Resources.resources
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.GenerateResource.cache
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.CoreCompileInputs.cache
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.exe
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.pdb
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormScientific.resources
+C:\Users\sanan\source\repos\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormStandart.resources
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.exe.config
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.exe
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\bin\Debug\CalculatorWinForms.pdb
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormProgrammer.resources
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormScientific.resources
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.Properties.Resources.resources
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormStandart.resources
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.GenerateResource.cache
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.exe
+\\ITSTEP\students redirection$\Usib_uf00\Desktop\CalculatorWinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.pdb
