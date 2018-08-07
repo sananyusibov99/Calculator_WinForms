@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace CalculatorWinForms
 {
-    public class Options
+    public static class Options
     {
-        public string Language { get; set; }
+        private static string language;
+        public static string Language
+        {
+            get { return language; }
+            set { language= value; }
+        }
+
     }
 }

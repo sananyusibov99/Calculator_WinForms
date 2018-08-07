@@ -59,7 +59,7 @@ namespace CalculatorWinForms
         private void BtnSet_Click(object sender, EventArgs e)
         {
             MessageBox.Show(languages[comboBox1.Text]);
-            //options.Language = languages[comboBox1.Text];
+            Options.Language = languages[comboBox1.Text];
         }
     }
 }

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,20 +16,11 @@ namespace CalculatorWinForms
     {
         Calc calc = new Calc();
         int count = 0;
-        Options options = new Options();
 
         public FormStandart()
         {
             InitializeComponent();
             txtShow.Text = "0";
-            //using (WebClient wc = new WebClient())
-            //{
-            //    wc.Encoding = Encoding.UTF8;
-            //    //var result = wc.DownloadString($"https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180519T085039Z.2c50b69f58c34887.7d37dc64e412a4142605130cdb6705d8e840df03&%20&text={viewToolStripMenuItem.Text}&lang={}");
-            //   // var data = JObject.Parse(result);
-            //   //viewToolStripMenuItem.Text =
-
-            //        }
         }
 
         private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +57,14 @@ namespace CalculatorWinForms
         {
             var wnd = new FormSettings();
             var res = wnd.ShowDialog();
+            using (WebClient wc = new WebClient())
+            {
+                wc.Encoding = Encoding.UTF8;
+                var result = wc.DownloadString($"https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180519T085039Z.2c50b69f58c34887.7d37dc64e412a4142605130cdb6705d8e840df03&%20&text={newToolStripMenuItem.Text}&lang={Options.Language}");
+                var data = JObject.Parse(result);
+                MessageBox.Show((string)data["text"][0]);
+                newToolStripMenuItem.Text = (string)data["text"][0];
+            }
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
