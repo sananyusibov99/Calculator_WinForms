@@ -13,12 +13,54 @@ namespace CalculatorWinForms
     public partial class FormProgrammer : Form
     {
         Calc calc = new Calc();
+
         public FormProgrammer()
         {
             InitializeComponent();
         }
 
-        private void btnNumber_Click(object sender, EventArgs e)
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStandart();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void StatisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStatistics();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormScientific();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var wnd = new FormSettings();
+            var res = wnd.ShowDialog();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnNumber_Click(object sender, EventArgs e)
         {
             try
             {
@@ -39,27 +81,7 @@ namespace CalculatorWinForms
             catch { MessageBox.Show("Not a valid entry"); }
         }
 
-        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormStandart();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
-
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormScientific();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
-
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
             txtBIN.Clear();
             txtHEX.Clear();
@@ -117,7 +139,7 @@ namespace CalculatorWinForms
             txtDEC.Clear();
         }
 
-        private void btnBackspace_Click(object sender, EventArgs e)
+        private void BtnBackspace_Click(object sender, EventArgs e)
         {
             int lenght = txtDEC.Text.Length - 1;
             string text = txtDEC.Text;
@@ -128,19 +150,5 @@ namespace CalculatorWinForms
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void statisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormStatistics();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
     }
 }

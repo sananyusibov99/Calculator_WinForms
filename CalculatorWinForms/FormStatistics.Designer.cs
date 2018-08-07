@@ -59,6 +59,7 @@
             this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programmerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtMemory = new System.Windows.Forms.TextBox();
             this.btnAVG = new System.Windows.Forms.Button();
@@ -82,7 +83,7 @@
             this.btnNumber9.TabIndex = 1;
             this.btnNumber9.Text = "9";
             this.btnNumber9.UseVisualStyleBackColor = true;
-            this.btnNumber9.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber9.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber6
             // 
@@ -93,7 +94,7 @@
             this.btnNumber6.TabIndex = 2;
             this.btnNumber6.Text = "6";
             this.btnNumber6.UseVisualStyleBackColor = true;
-            this.btnNumber6.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber6.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber8
             // 
@@ -104,7 +105,7 @@
             this.btnNumber8.TabIndex = 3;
             this.btnNumber8.Text = "8";
             this.btnNumber8.UseVisualStyleBackColor = true;
-            this.btnNumber8.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber8.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber5
             // 
@@ -115,7 +116,7 @@
             this.btnNumber5.TabIndex = 4;
             this.btnNumber5.Text = "5";
             this.btnNumber5.UseVisualStyleBackColor = true;
-            this.btnNumber5.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber5.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber7
             // 
@@ -126,7 +127,7 @@
             this.btnNumber7.TabIndex = 5;
             this.btnNumber7.Text = "7";
             this.btnNumber7.UseVisualStyleBackColor = true;
-            this.btnNumber7.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber7.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber4
             // 
@@ -138,7 +139,7 @@
             this.btnNumber4.TabIndex = 6;
             this.btnNumber4.Text = "4";
             this.btnNumber4.UseVisualStyleBackColor = true;
-            this.btnNumber4.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber4.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber3
             // 
@@ -149,7 +150,7 @@
             this.btnNumber3.TabIndex = 7;
             this.btnNumber3.Text = "3";
             this.btnNumber3.UseVisualStyleBackColor = true;
-            this.btnNumber3.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber3.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber2
             // 
@@ -160,7 +161,7 @@
             this.btnNumber2.TabIndex = 8;
             this.btnNumber2.Text = "2";
             this.btnNumber2.UseVisualStyleBackColor = true;
-            this.btnNumber2.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber2.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber1
             // 
@@ -171,7 +172,7 @@
             this.btnNumber1.TabIndex = 9;
             this.btnNumber1.Text = "1";
             this.btnNumber1.UseVisualStyleBackColor = true;
-            this.btnNumber1.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber1.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnComma
             // 
@@ -182,7 +183,7 @@
             this.btnComma.TabIndex = 10;
             this.btnComma.Text = ",";
             this.btnComma.UseVisualStyleBackColor = true;
-            this.btnComma.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnComma.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber0
             // 
@@ -193,7 +194,7 @@
             this.btnNumber0.TabIndex = 11;
             this.btnNumber0.Text = "0";
             this.btnNumber0.UseVisualStyleBackColor = true;
-            this.btnNumber0.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber0.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnBackspace
             // 
@@ -203,7 +204,7 @@
             this.btnBackspace.TabIndex = 12;
             this.btnBackspace.Text = "⌫";
             this.btnBackspace.UseVisualStyleBackColor = true;
-            this.btnBackspace.Click += new System.EventHandler(this.btnBackspace_Click);
+            this.btnBackspace.Click += new System.EventHandler(this.BtnBackspace_Click);
             // 
             // btnClearE
             // 
@@ -213,7 +214,7 @@
             this.btnClearE.TabIndex = 14;
             this.btnClearE.Text = "CE";
             this.btnClearE.UseVisualStyleBackColor = true;
-            this.btnClearE.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClearE.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnCAD
             // 
@@ -223,7 +224,7 @@
             this.btnCAD.TabIndex = 16;
             this.btnCAD.Text = "CAD";
             this.btnCAD.UseVisualStyleBackColor = true;
-            this.btnCAD.Click += new System.EventHandler(this.btnCAD_Click);
+            this.btnCAD.Click += new System.EventHandler(this.BtnCAD_Click);
             // 
             // btnSUMx
             // 
@@ -233,7 +234,7 @@
             this.btnSUMx.TabIndex = 18;
             this.btnSUMx.Text = "SUM(X)";
             this.btnSUMx.UseVisualStyleBackColor = true;
-            this.btnSUMx.Click += new System.EventHandler(this.btnSUMx_Click);
+            this.btnSUMx.Click += new System.EventHandler(this.BtnSUMx_Click);
             // 
             // btnSUMxPow2
             // 
@@ -243,7 +244,7 @@
             this.btnSUMxPow2.TabIndex = 19;
             this.btnSUMxPow2.Text = "SUM(X²)";
             this.btnSUMxPow2.UseVisualStyleBackColor = true;
-            this.btnSUMxPow2.Click += new System.EventHandler(this.btnSUMxPow2_Click);
+            this.btnSUMxPow2.Click += new System.EventHandler(this.BtnSUMxPow2_Click);
             // 
             // btnAdd
             // 
@@ -253,7 +254,7 @@
             this.btnAdd.TabIndex = 21;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // btnExp
             // 
@@ -263,7 +264,7 @@
             this.btnExp.TabIndex = 22;
             this.btnExp.Text = "Exp";
             this.btnExp.UseVisualStyleBackColor = true;
-            this.btnExp.Click += new System.EventHandler(this.btnExp_Click);
+            this.btnExp.Click += new System.EventHandler(this.BtnExp_Click);
             // 
             // btnMemorySet
             // 
@@ -273,7 +274,7 @@
             this.btnMemorySet.TabIndex = 23;
             this.btnMemorySet.Text = "MS";
             this.btnMemorySet.UseVisualStyleBackColor = true;
-            this.btnMemorySet.Click += new System.EventHandler(this.btnMemorySet_Click);
+            this.btnMemorySet.Click += new System.EventHandler(this.BtnMemorySet_Click);
             // 
             // btnMemorySub
             // 
@@ -283,7 +284,7 @@
             this.btnMemorySub.TabIndex = 24;
             this.btnMemorySub.Text = "M-";
             this.btnMemorySub.UseVisualStyleBackColor = true;
-            this.btnMemorySub.Click += new System.EventHandler(this.btnMemorySub_Click);
+            this.btnMemorySub.Click += new System.EventHandler(this.BtnMemorySub_Click);
             // 
             // btnMemoryAdd
             // 
@@ -293,7 +294,7 @@
             this.btnMemoryAdd.TabIndex = 25;
             this.btnMemoryAdd.Text = "M+";
             this.btnMemoryAdd.UseVisualStyleBackColor = true;
-            this.btnMemoryAdd.Click += new System.EventHandler(this.btnMemoryAdd_Click);
+            this.btnMemoryAdd.Click += new System.EventHandler(this.BtnMemoryAdd_Click);
             // 
             // btnMemoryRecord
             // 
@@ -303,7 +304,7 @@
             this.btnMemoryRecord.TabIndex = 26;
             this.btnMemoryRecord.Text = "MR";
             this.btnMemoryRecord.UseVisualStyleBackColor = true;
-            this.btnMemoryRecord.Click += new System.EventHandler(this.btnMemoryRecord_Click);
+            this.btnMemoryRecord.Click += new System.EventHandler(this.BtnMemoryRecord_Click);
             // 
             // btnMemoryClean
             // 
@@ -313,12 +314,13 @@
             this.btnMemoryClean.TabIndex = 27;
             this.btnMemoryClean.Text = "MC";
             this.btnMemoryClean.UseVisualStyleBackColor = true;
-            this.btnMemoryClean.Click += new System.EventHandler(this.btnMemoryClean_Click);
+            this.btnMemoryClean.Click += new System.EventHandler(this.BtnMemoryClean_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewToolStripMenuItem,
+            this.settingsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -344,7 +346,7 @@
             this.standartToolStripMenuItem.Name = "standartToolStripMenuItem";
             this.standartToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.standartToolStripMenuItem.Text = "Standart";
-            this.standartToolStripMenuItem.Click += new System.EventHandler(this.standartToolStripMenuItem_Click);
+            this.standartToolStripMenuItem.Click += new System.EventHandler(this.StandartToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
@@ -352,7 +354,7 @@
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
             this.scientificToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.scientificToolStripMenuItem.Text = "Scientific";
-            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
+            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.ScientificToolStripMenuItem_Click);
             // 
             // programmerToolStripMenuItem
             // 
@@ -360,7 +362,7 @@
             this.programmerToolStripMenuItem.Name = "programmerToolStripMenuItem";
             this.programmerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.programmerToolStripMenuItem.Text = "Programmer";
-            this.programmerToolStripMenuItem.Click += new System.EventHandler(this.programmerToolStripMenuItem_Click);
+            this.programmerToolStripMenuItem.Click += new System.EventHandler(this.ProgrammerToolStripMenuItem_Click);
             // 
             // statisticsToolStripMenuItem
             // 
@@ -369,12 +371,21 @@
             this.statisticsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.statisticsToolStripMenuItem.Text = "Statistics";
             // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("settingsToolStripMenuItem.Image")));
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // txtMemory
             // 
@@ -391,7 +402,7 @@
             this.btnAVG.TabIndex = 30;
             this.btnAVG.Text = "AVG";
             this.btnAVG.UseVisualStyleBackColor = true;
-            this.btnAVG.Click += new System.EventHandler(this.btnAVG_Click);
+            this.btnAVG.Click += new System.EventHandler(this.BtnAVG_Click);
             // 
             // FormStatistics
             // 
@@ -428,7 +439,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormStatistics";
-            this.Text = "FormStatistics";
+            this.Text = "Statistics";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -471,5 +482,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.TextBox txtMemory;
         private System.Windows.Forms.Button btnAVG;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }

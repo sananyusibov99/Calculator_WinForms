@@ -12,17 +12,57 @@ namespace CalculatorWinForms
 {
     public partial class FormScientific : Form
     {
+        int count = 0;
         Calc calc = new Calc();
-        int count;
+
         public FormScientific()
         {
             InitializeComponent();
             txtShow.Text = "0";
         }
 
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStandart();
 
+            this.Close();
 
-        private void btnNumber_Click(object sender, EventArgs e)
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void ProgrammerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormProgrammer();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void StatisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStatistics();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var wnd = new FormSettings();
+            var res = wnd.ShowDialog();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnNumber_Click(object sender, EventArgs e)
         {
             try
             {
@@ -43,7 +83,7 @@ namespace CalculatorWinForms
             catch { MessageBox.Show("Not a valid entry"); }
             }
 
-        private void btnPlusSign_Click(object sender, EventArgs e)
+        private void BtnPlusSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -56,7 +96,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnMinusSign_Click(object sender, EventArgs e)
+        private void BtnMinusSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -69,7 +109,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnMultSign_Click(object sender, EventArgs e)
+        private void BtnMultSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -82,7 +122,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnDivSign_Click(object sender, EventArgs e)
+        private void BtnDivSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -95,13 +135,13 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnEqualSign_Click(object sender, EventArgs e)
+        private void BtnEqualSign_Click(object sender, EventArgs e)
         {
-            calculate();
+            Calculate();
             label1.Text = "";
         }
 
-        private void calculate()
+        private void Calculate()
         {
             switch (calc.Sign)
             {
@@ -127,7 +167,7 @@ namespace CalculatorWinForms
             }
         }
 
-        private void btnBackspace_Click(object sender, EventArgs e)
+        private void BtnBackspace_Click(object sender, EventArgs e)
         {
             int lenght = txtShow.Text.Length - 1;
             string text = txtShow.Text;
@@ -138,28 +178,28 @@ namespace CalculatorWinForms
             }
         }
 
-        private void btnReverseSign_Click(object sender, EventArgs e)
+        private void BtnReverseSign_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Convert.ToDouble(txtShow.Text);
             calc.SecondInt = 1 / calc.FirstInt;
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnRootSign_Click(object sender, EventArgs e)
+        private void BtnRootSign_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Convert.ToDouble(txtShow.Text);
             calc.SecondInt = Math.Sqrt(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnXpow2_Click(object sender, EventArgs e)
+        private void BtnXpow2_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Convert.ToDouble(txtShow.Text);
             calc.SecondInt = Math.Pow(calc.FirstInt, 2);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnXpow3_Click(object sender, EventArgs e)
+        private void BtnXpow3_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Convert.ToDouble(txtShow.Text);
             calc.SecondInt = Math.Pow(calc.FirstInt, 3);
@@ -176,36 +216,35 @@ namespace CalculatorWinForms
             return res;
         }
 
-        private void btnFactorial_Click(object sender, EventArgs e)
+        private void BtnFactorial_Click(object sender, EventArgs e)
         {
             double n = Double.Parse(txtShow.Text);
             calc.FirstInt = Factorial(n);
             txtShow.Text = calc.FirstInt.ToString();
         }
 
-        private void btnSin_Click(object sender, EventArgs e)
+        private void BtnSin_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Sin(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnCos_Click(object sender, EventArgs e)
+        private void BtnCos_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Cos(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnTan_Click(object sender, EventArgs e)
+        private void BtnTan_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Tan(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-
-        private void btnCE_Click(object sender, EventArgs e)
+        private void BtnCE_Click(object sender, EventArgs e)
         {
             txtShow.Text = "0";
             label1.Text = null;
@@ -214,25 +253,25 @@ namespace CalculatorWinForms
             calc.Sign = null;
         }
 
-        private void btnMemoryClean_Click(object sender, EventArgs e)
+        private void BtnMemoryClean_Click(object sender, EventArgs e)
         {
             calc.Memory = 0;
             txtMemory.Text = "0";
         }
 
-        private void btnMemoryRecord_Click(object sender, EventArgs e)
+        private void BtnMemoryRecord_Click(object sender, EventArgs e)
         {
             txtShow.Text = txtMemory.Text;
         }
 
-        private void btnMemorySet_Click(object sender, EventArgs e)
+        private void BtnMemorySet_Click(object sender, EventArgs e)
         {
             calc.Memory = Double.Parse(txtShow.Text);
             txtMemory.Text = calc.Memory.ToString();
             txtShow.Text = "0";
         }
 
-        private void btnMemoryAdd_Click(object sender, EventArgs e)
+        private void BtnMemoryAdd_Click(object sender, EventArgs e)
         {
             double Num2, Num3;
             Num2 = Double.Parse(txtShow.Text);
@@ -240,7 +279,7 @@ namespace CalculatorWinForms
             txtMemory.Text = Num3.ToString();
         }
 
-        private void btnMemorySub_Click(object sender, EventArgs e)
+        private void BtnMemorySub_Click(object sender, EventArgs e)
         {
             double Num2, Num3;
             Num2 = Double.Parse(txtShow.Text);
@@ -248,65 +287,31 @@ namespace CalculatorWinForms
             txtMemory.Text = Num3.ToString();
         }
 
-        private void btnPi_Click(object sender, EventArgs e)
+        private void BtnPi_Click(object sender, EventArgs e)
         {
             txtShow.Text = Math.PI.ToString();
         }
 
-        private void btnLog_Click(object sender, EventArgs e)
+        private void BtnLog_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Log10(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnLn_Click(object sender, EventArgs e)
+        private void BtnLn_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Log(calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void btnTenPowX_Click(object sender, EventArgs e)
+        private void BtnTenPowX_Click(object sender, EventArgs e)
         {
             calc.FirstInt = Double.Parse(txtShow.Text);
             calc.SecondInt = Math.Pow(10, calc.FirstInt);
             txtShow.Text = calc.SecondInt.ToString();
         }
 
-        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormStandart();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
-
-        private void programmerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormProgrammer();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void statisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormStatistics();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
     }
 }

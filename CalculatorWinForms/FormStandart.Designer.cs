@@ -63,6 +63,7 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
+            this.settingsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -100,32 +102,32 @@
             // 
             this.standardToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("standardToolStripMenuItem.Image")));
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.standardToolStripMenuItem.Text = "Standard";
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scientificToolStripMenuItem.Image")));
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.scientificToolStripMenuItem.Text = "Scientific";
-            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
+            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.ScientificToolStripMenuItem_Click);
             // 
             // programmerToolStripMenuItem
             // 
             this.programmerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("programmerToolStripMenuItem.Image")));
             this.programmerToolStripMenuItem.Name = "programmerToolStripMenuItem";
-            this.programmerToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.programmerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.programmerToolStripMenuItem.Text = "Programmer";
-            this.programmerToolStripMenuItem.Click += new System.EventHandler(this.programmerToolStripMenuItem_Click);
+            this.programmerToolStripMenuItem.Click += new System.EventHandler(this.ProgrammerToolStripMenuItem_Click);
             // 
             // statisticslaterToolStripMenuItem
             // 
             this.statisticslaterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("statisticslaterToolStripMenuItem.Image")));
             this.statisticslaterToolStripMenuItem.Name = "statisticslaterToolStripMenuItem";
-            this.statisticslaterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statisticslaterToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.statisticslaterToolStripMenuItem.Text = "Statistics";
-            this.statisticslaterToolStripMenuItem.Click += new System.EventHandler(this.statisticslaterToolStripMenuItem_Click);
+            this.statisticslaterToolStripMenuItem.Click += new System.EventHandler(this.StatisticslaterToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -133,7 +135,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // txtShow
             // 
@@ -154,7 +156,7 @@
             this.btnDivSign.TabIndex = 26;
             this.btnDivSign.Text = "/";
             this.btnDivSign.UseVisualStyleBackColor = true;
-            this.btnDivSign.Click += new System.EventHandler(this.btnDivSign_Click);
+            this.btnDivSign.Click += new System.EventHandler(this.BtnDivSign_Click);
             // 
             // btnMultSign
             // 
@@ -166,7 +168,7 @@
             this.btnMultSign.TabIndex = 25;
             this.btnMultSign.Text = "*";
             this.btnMultSign.UseVisualStyleBackColor = true;
-            this.btnMultSign.Click += new System.EventHandler(this.btnMultSign_Click);
+            this.btnMultSign.Click += new System.EventHandler(this.BtnMultSign_Click);
             // 
             // btnNumber9
             // 
@@ -178,7 +180,7 @@
             this.btnNumber9.TabIndex = 24;
             this.btnNumber9.Text = "9";
             this.btnNumber9.UseVisualStyleBackColor = true;
-            this.btnNumber9.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber9.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnCE
             // 
@@ -189,7 +191,7 @@
             this.btnCE.TabIndex = 23;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = true;
-            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
+            this.btnCE.Click += new System.EventHandler(this.BtnCE_Click);
             // 
             // btnNumber6
             // 
@@ -201,7 +203,7 @@
             this.btnNumber6.TabIndex = 22;
             this.btnNumber6.Text = "6";
             this.btnNumber6.UseVisualStyleBackColor = true;
-            this.btnNumber6.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber6.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber8
             // 
@@ -213,7 +215,7 @@
             this.btnNumber8.TabIndex = 27;
             this.btnNumber8.Text = "8";
             this.btnNumber8.UseVisualStyleBackColor = true;
-            this.btnNumber8.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber8.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber5
             // 
@@ -225,7 +227,7 @@
             this.btnNumber5.TabIndex = 10;
             this.btnNumber5.Text = "5";
             this.btnNumber5.UseVisualStyleBackColor = true;
-            this.btnNumber5.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber5.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnBackspace
             // 
@@ -236,7 +238,7 @@
             this.btnBackspace.TabIndex = 19;
             this.btnBackspace.Text = "⌫";
             this.btnBackspace.UseVisualStyleBackColor = true;
-            this.btnBackspace.Click += new System.EventHandler(this.btnBackspace_Click);
+            this.btnBackspace.Click += new System.EventHandler(this.BtnBackspace_Click);
             // 
             // btnNumber7
             // 
@@ -248,7 +250,7 @@
             this.btnNumber7.TabIndex = 18;
             this.btnNumber7.Text = "7";
             this.btnNumber7.UseVisualStyleBackColor = true;
-            this.btnNumber7.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber7.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnMinusSign
             // 
@@ -260,7 +262,7 @@
             this.btnMinusSign.TabIndex = 17;
             this.btnMinusSign.Text = "-";
             this.btnMinusSign.UseVisualStyleBackColor = true;
-            this.btnMinusSign.Click += new System.EventHandler(this.btnMinusSign_Click);
+            this.btnMinusSign.Click += new System.EventHandler(this.BtnMinusSign_Click);
             // 
             // btnNumber4
             // 
@@ -273,7 +275,7 @@
             this.btnNumber4.TabIndex = 16;
             this.btnNumber4.Text = "4";
             this.btnNumber4.UseVisualStyleBackColor = true;
-            this.btnNumber4.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber4.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber3
             // 
@@ -285,7 +287,7 @@
             this.btnNumber3.TabIndex = 15;
             this.btnNumber3.Text = "3";
             this.btnNumber3.UseVisualStyleBackColor = true;
-            this.btnNumber3.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber3.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnEqualSign
             // 
@@ -296,7 +298,7 @@
             this.btnEqualSign.TabIndex = 14;
             this.btnEqualSign.Text = "=";
             this.btnEqualSign.UseVisualStyleBackColor = true;
-            this.btnEqualSign.Click += new System.EventHandler(this.btnEqualSign_Click);
+            this.btnEqualSign.Click += new System.EventHandler(this.BtnEqualSign_Click);
             // 
             // btnNumber2
             // 
@@ -308,7 +310,7 @@
             this.btnNumber2.TabIndex = 13;
             this.btnNumber2.Text = "2";
             this.btnNumber2.UseVisualStyleBackColor = true;
-            this.btnNumber2.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber2.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnPlusSign
             // 
@@ -320,7 +322,7 @@
             this.btnPlusSign.TabIndex = 12;
             this.btnPlusSign.Text = "+";
             this.btnPlusSign.UseVisualStyleBackColor = true;
-            this.btnPlusSign.Click += new System.EventHandler(this.btnPlusSign_Click);
+            this.btnPlusSign.Click += new System.EventHandler(this.BtnPlusSign_Click);
             // 
             // btnNumber1
             // 
@@ -332,7 +334,7 @@
             this.btnNumber1.TabIndex = 11;
             this.btnNumber1.Text = "1";
             this.btnNumber1.UseVisualStyleBackColor = true;
-            this.btnNumber1.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber1.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnComma
             // 
@@ -344,7 +346,7 @@
             this.btnComma.TabIndex = 20;
             this.btnComma.Text = ",";
             this.btnComma.UseVisualStyleBackColor = true;
-            this.btnComma.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnComma.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // btnNumber0
             // 
@@ -356,7 +358,7 @@
             this.btnNumber0.TabIndex = 21;
             this.btnNumber0.Text = "0";
             this.btnNumber0.UseVisualStyleBackColor = true;
-            this.btnNumber0.Click += new System.EventHandler(this.btnNumber_Click);
+            this.btnNumber0.Click += new System.EventHandler(this.BtnNumber_Click);
             // 
             // label1
             // 
@@ -498,6 +500,14 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(289, 57);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("settingsToolStripMenuItem.Image")));
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
+            // 
             // FormStandart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -560,5 +570,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }

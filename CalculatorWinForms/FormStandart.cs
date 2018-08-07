@@ -13,14 +13,24 @@ namespace CalculatorWinForms
     public partial class FormStandart : Form
     {
         Calc calc = new Calc();
-        int count;
+        int count = 0;
+        Options options = new Options();
+
         public FormStandart()
         {
             InitializeComponent();
             txtShow.Text = "0";
+            //using (WebClient wc = new WebClient())
+            //{
+            //    wc.Encoding = Encoding.UTF8;
+            //    //var result = wc.DownloadString($"https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180519T085039Z.2c50b69f58c34887.7d37dc64e412a4142605130cdb6705d8e840df03&%20&text={viewToolStripMenuItem.Text}&lang={}");
+            //   // var data = JObject.Parse(result);
+            //   //viewToolStripMenuItem.Text =
+
+            //        }
         }
 
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.Context.MainForm = new FormScientific();
 
@@ -30,8 +40,7 @@ namespace CalculatorWinForms
             Program.Context.MainForm.Show();
         }
 
-
-        private void programmerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ProgrammerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.Context.MainForm = new FormProgrammer();
 
@@ -41,7 +50,28 @@ namespace CalculatorWinForms
             Program.Context.MainForm.Show();
         }
 
-        private void btnNumber_Click(object sender, EventArgs e)
+        private void StatisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStatistics();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
+
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var wnd = new FormSettings();
+            var res = wnd.ShowDialog();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnNumber_Click(object sender, EventArgs e)
         {
             try
             {
@@ -62,7 +92,7 @@ namespace CalculatorWinForms
             catch { MessageBox.Show("Not a valid entry"); }
         }
 
-        private void btnPlusSign_Click(object sender, EventArgs e)
+        private void BtnPlusSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -75,7 +105,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnMinusSign_Click(object sender, EventArgs e)
+        private void BtnMinusSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -88,7 +118,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnMultSign_Click(object sender, EventArgs e)
+        private void BtnMultSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -101,7 +131,7 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnDivSign_Click(object sender, EventArgs e)
+        private void BtnDivSign_Click(object sender, EventArgs e)
         {
             try
             {
@@ -114,13 +144,13 @@ namespace CalculatorWinForms
             catch { }
         }
 
-        private void btnEqualSign_Click(object sender, EventArgs e)
+        private void BtnEqualSign_Click(object sender, EventArgs e)
         {
-            calculate();
+            Calculate();
             label1.Text = "";
         }
 
-        private void calculate()
+        private void Calculate()
         {
             switch (calc.Sign)
             {
@@ -146,7 +176,7 @@ namespace CalculatorWinForms
             }
         }
 
-        private void btnBackspace_Click(object sender, EventArgs e)
+        private void BtnBackspace_Click(object sender, EventArgs e)
         {
             int lenght = txtShow.Text.Length - 1;
             string text = txtShow.Text;
@@ -157,7 +187,7 @@ namespace CalculatorWinForms
             }
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
+        private void BtnCE_Click(object sender, EventArgs e)
         {
             txtShow.Text = "0";
             label1.Text = null;
@@ -166,19 +196,5 @@ namespace CalculatorWinForms
             calc.Sign = null;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void statisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Program.Context.MainForm = new FormStatistics();
-
-            this.Close();
-
-            // покажет вторую форму и оставит приложение живым до ее закрытия
-            Program.Context.MainForm.Show();
-        }
     }
 }

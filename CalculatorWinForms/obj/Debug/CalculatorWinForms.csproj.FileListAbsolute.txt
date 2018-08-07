@@ -34,3 +34,7 @@ C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug
 C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.CoreCompileInputs.cache
 C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.exe
 C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.pdb
+C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.FormSettings.resources
+C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usib_uf00\Source\Repos\Calculator_WinForms\CalculatorWinForms\obj\Debug\CalculatorWinForms.csproj.CopyComplete
