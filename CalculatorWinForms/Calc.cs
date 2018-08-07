@@ -8,39 +8,19 @@ namespace CalculatorWinForms
 {
     class Calc
     {
-        private double firstInt;
-        public double FirstInt
+
+        public Calc()
         {
-            get { return firstInt; }
-            set { firstInt = value; }
+            Numbers = new List<double>();
         }
 
-        private double secondInt;
-        public double SecondInt
-        {
-            get { return secondInt; }
-            set { secondInt = value; }
-        }
+        public List<double> Numbers { get; set; }
+        public double Memory { get; set; }
 
-        private char? sign;
-        public char? Sign
-        {
-            get { return sign; }
-            set { sign = value; }
-        }
+        public double FirstInt { get; set; }
+        public double SecondInt { get; set; }
+        public char? Sign { get; set; }
 
-        private double memory;
-        public double Memory
-        {
-            get { return memory; }
-            set { memory = value; }
-        }
-
-        private char[] hex;
-        public char[] HEX
-        {
-            get { return hex; }
-            set { hex = value; }
-        }
+        public char[] HEX { get; set; }
     }
 }

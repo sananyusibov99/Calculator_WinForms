@@ -121,6 +121,16 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="viewToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAO9JREFUOE/d0b9LQlEYxvFjZFChk2uLg1iKIDiEYxA2ODg4OBZBY4ODgjiJlCC0
+        CiFFaP7A8G/s+7yvFxQEdx/4cJ8D955z7jnheJPBIzpooYYkDqaIFd5wjyzyqGOMd1xgb6r4QgJx9PCL
+        BV6gaIE/pGy0lStMEbNRCB+482p5xbNXe3eG6F3LAGmv4RQTrzuZb57KEx68eoaIJjjDt9edaNUo+rjh
+        1aNt6V9PbOQHduPVoltoe7XzWeLcRlupQCtfQlf2Cf2Ktt6HJtcB/+AWe6NTXqOJa+jKNGEB2oGuOIeD
+        KaML7WIEfVzC8SWEf+wRHsm5wD5tAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="standartToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -168,29 +178,19 @@
   </data>
   <data name="statisticsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKLSURBVDhPtdJdSJNRGAfw46o1ndpF0Bi+uoJdxC4EJ5Yo
-        bqyBiRmzZOlFvk6UhbEV0z6Wvu4lodSJoa2UFX5clK4jaIlohZKBZGKEKZaV0ddAJF3TbM6tetoOe9lF
-        GN30wI+Hcx7OHw7noP9WJR2uamOXCxu63PikY8Vx9u6vmNDo36p6yAtXn/gI+4QPyno92tDoz1oqLaWW
-        dTrtQqFOO20wax+xNyjrqBdsz/1E96sfUNaz/JcAmra7rVZw19dDsM8ZztktDz3QMOEn7FN+MDg+bh7g
-        Zhi8brMBZ762GZv616BmzE/UjwcD5jYPcJWXY09dHXBeM7X4BF6F8yM+ghn1QbGtw8LYD/5k27Ih6EyT
-        ajp0HKEvej1eq6oCzuzpC7jolhsMQxuE6YEPSlvb8Dv3fZhddhDDM9chdByhhfx8/M1oBM5UsREXtLug
-        uG+D0PdvAN3ciicXW+Cxs4bonawOBzhzcvAKTQPnWYEe57YswbFuL3Ece6GgoRmPfGZh8IOJ6BwrCwe8
-        V6vxV40GOOMaGmddWYTstnXiSOc6aC7V4d63esBvaKJpOC8c8DItDS+pVMAZzdTiA5cXQHXNQ2S1eiCz
-        isXtM3lwc/owcXFAHQ4YS0rCiykpwLktT+9Jt3yC1IbvhKJxFeRFJT2NT9WBf5FBmO6kAAIUgQKPu8WS
-        kNA3l5gIHDY+fmBf+QtIZp1EKjsPlEI9YL63H8yDcoJukYFEKRGQgL18/qEMgcAcwAR7YH00Jk5xKjZO
-        URlLKZkdlKIicueuXKGEVxG9m8dES3iVwj08g0SJBOQKSoS2ihGKEiEkFCNxlAzJ+FKpdDsSiYQERUWi
-        5ORtVLCLUGAPCWUyxEcIRfwG2xWkbheg0AQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="viewToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAO9JREFUOE/d0b9LQlEYxvFjZFChk2uLg1iKIDiEYxA2ODg4OBZBY4ODgjiJlCC0
-        CiFFaP7A8G/s+7yvFxQEdx/4cJ8D955z7jnheJPBIzpooYYkDqaIFd5wjyzyqGOMd1xgb6r4QgJx9PCL
-        BV6gaIE/pGy0lStMEbNRCB+482p5xbNXe3eG6F3LAGmv4RQTrzuZb57KEx68eoaIJjjDt9edaNUo+rjh
-        1aNt6V9PbOQHduPVoltoe7XzWeLcRlupQCtfQlf2Cf2Ktt6HJtcB/+AWe6NTXqOJa+jKNGEB2oGuOIeD
-        KaML7WIEfVzC8SWEf+wRHsm5wD5tAAAAAElFTkSuQmCC
+        wwAADsMBx2+oZAAAAotJREFUOE+10l1Ik1EYB/DjqjWd2kXQGL66gl3ELgQnlihurIGJGbNk6UW+TpSF
+        sRXTPpa+7iWh1ImhrZQVflyUriNoiWiFkoFkYoQplpXR10AkXdNszq162g572UUY3fTAj4dzHs4fDueg
+        /1YlHa5qY5cLG7rc+KRjxXH27q+Y0OjfqnrIC1ef+Aj7hA/Kej3a0OjPWiotpZZ1Ou1CoU47bTBrH7E3
+        KOuoF2zP/UT3qx9Q1rP8lwCatrutVnDX10OwzxnO2S0PPdAw4SfsU34wOD5uHuBmGLxuswFnvrYZm/rX
+        oGbMT9SPBwPmNg9wlZdjT10dcF4ztfgEXoXzIz6CGfVBsa3DwtgP/mTbsiHoTJNqOnQcoS96PV6rqgLO
+        7OkLuOiWGwxDG4TpgQ9KW9vwO/d9mF12EMMz1yF0HKGF/Hz8zWgEzlSxERe0u6C4b4PQ928A3dyKJxdb
+        4LGzhuidrA4HOHNy8ApNA+dZgR7ntizBsW4vcRx7oaChGY98ZmHwg4noHCsLB7xXq/FXjQY44xoaZ11Z
+        hOy2deJI5zpoLtXh3rd6wG9oomk4LxzwMi0NL6lUwBnN1OIDlxdAdc1DZLV6ILOKxe0zeXBz+jBxcUAd
+        DhhLSsKLKSnAuS1P70m3fILUhu+EonEV5EUlPY1P1YF/kUGY7qQAAhSBAo+7xZKQ0DeXmAgcNj5+YF/5
+        C0hmnUQqOw+UQj1gvrcfzINygm6RgUQpEZCAvXz+oQyBwBzABHtgfTQmTnEqNk5RGUspmR2UoiJy565c
+        oYRXEb2bx0RLeJXCPTyDRIkE5ApKhLaKEYoSISQUI3GUDMn4Uql0OxKJhARFRaLk5G1UsItQYA8JZTLE
+        RwhF/AbbFaRuF6DQBAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="exitToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
