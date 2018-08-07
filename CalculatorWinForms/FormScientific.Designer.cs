@@ -56,6 +56,7 @@
             this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programmerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticslaterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.btnXpow2 = new System.Windows.Forms.Button();
             this.btnXpow3 = new System.Windows.Forms.Button();
@@ -74,7 +75,6 @@
             this.btnLn = new System.Windows.Forms.Button();
             this.btnTenPowX = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -351,9 +351,19 @@
             // 
             // statisticslaterToolStripMenuItem
             // 
+            this.statisticslaterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("statisticslaterToolStripMenuItem.Image")));
             this.statisticslaterToolStripMenuItem.Name = "statisticslaterToolStripMenuItem";
             this.statisticslaterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.statisticslaterToolStripMenuItem.Text = "Statistics (later)";
+            this.statisticslaterToolStripMenuItem.Text = "Statistics";
+            this.statisticslaterToolStripMenuItem.Click += new System.EventHandler(this.statisticslaterToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -531,14 +541,6 @@
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 35;
             this.label2.Text = "Memory";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // FormScientific
             // 

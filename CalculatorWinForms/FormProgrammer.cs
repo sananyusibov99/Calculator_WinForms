@@ -132,5 +132,15 @@ namespace CalculatorWinForms
         {
             Close();
         }
+
+        private void statisticslaterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Context.MainForm = new FormStatistics();
+
+            this.Close();
+
+            // покажет вторую форму и оставит приложение живым до ее закрытия
+            Program.Context.MainForm.Show();
+        }
     }
 }
