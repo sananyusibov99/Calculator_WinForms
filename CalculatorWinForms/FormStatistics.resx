@@ -121,16 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="viewToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAO9JREFUOE/d0b9LQlEYxvFjZFChk2uLg1iKIDiEYxA2ODg4OBZBY4ODgjiJlCC0
-        CiFFaP7A8G/s+7yvFxQEdx/4cJ8D955z7jnheJPBIzpooYYkDqaIFd5wjyzyqGOMd1xgb6r4QgJx9PCL
-        BV6gaIE/pGy0lStMEbNRCB+482p5xbNXe3eG6F3LAGmv4RQTrzuZb57KEx68eoaIJjjDt9edaNUo+rjh
-        1aNt6V9PbOQHduPVoltoe7XzWeLcRlupQCtfQlf2Cf2Ktt6HJtcB/+AWe6NTXqOJa+jKNGEB2oGuOIeD
-        KaML7WIEfVzC8SWEf+wRHsm5wD5tAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="standartToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -191,6 +181,16 @@
         C0hmnUQqOw+UQj1gvrcfzINygm6RgUQpEZCAvXz+oQyBwBzABHtgfTQmTnEqNk5RGUspmR2UoiJy565c
         oYRXEb2bx0RLeJXCPTyDRIkE5ApKhLaKEYoSISQUI3GUDMn4Uql0OxKJhARFRaLk5G1UsItQYA8JZTLE
         RwhF/AbbFaRuF6DQBAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="viewToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAO9JREFUOE/d0b9LQlEYxvFjZFChk2uLg1iKIDiEYxA2ODg4OBZBY4ODgjiJlCC0
+        CiFFaP7A8G/s+7yvFxQEdx/4cJ8D955z7jnheJPBIzpooYYkDqaIFd5wjyzyqGOMd1xgb6r4QgJx9PCL
+        BV6gaIE/pGy0lStMEbNRCB+482p5xbNXe3eG6F3LAGmv4RQTrzuZb57KEx68eoaIJjjDt9edaNUo+rjh
+        1aNt6V9PbOQHduPVoltoe7XzWeLcRlupQCtfQlf2Cf2Ktt6HJtcB/+AWe6NTXqOJa+jKNGEB2oGuOIeD
+        KaML7WIEfVzC8SWEf+wRHsm5wD5tAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="settingsToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
