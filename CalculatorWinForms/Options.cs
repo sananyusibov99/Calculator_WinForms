@@ -15,5 +15,14 @@ namespace CalculatorWinForms
             set { language= value; }
         }
 
+        private static List<string> texts;
+        public static List<string> Texts
+        {
+            get { return texts; }
+            set { texts = value; }
+        }
+
+
+
     }
 }

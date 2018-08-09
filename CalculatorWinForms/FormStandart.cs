@@ -21,7 +21,15 @@ namespace CalculatorWinForms
         {
             InitializeComponent();
             txtShow.Text = "0";
+            try
+            {
+                WebClient();
+                TextChange(texts);
+            }
+            catch { }
         }
+
+        static List<string> texts = new List<string>();
 
         private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -53,18 +61,58 @@ namespace CalculatorWinForms
             Program.Context.MainForm.Show();
         }
 
+        public void TextChange(List<string> texts)
+        {
+            viewToolStripMenuItem.Text = texts[0];
+            exitToolStripMenuItem.Text = texts[1];
+            settingsToolStripMenuItem.Text = texts[2];
+            exitToolStripMenuItem.Text = texts[3];
+            scientificToolStripMenuItem.Text = texts[4];
+            programmerToolStripMenuItem.Text = texts[5];
+            statisticsToolStripMenuItem.Text = texts[6];
+            standartToolStripMenuItem.Text = texts[7];
+            //ActiveForm.Text = texts[8];
+
+        }
+
+        public void WebClient()
+        {
+            using (WebClient wc = new WebClient())
+            {
+                wc.Encoding = Encoding.UTF8;
+
+                texts = new List<string>
+                {
+                    viewToolStripMenuItem.Text,
+                    exitToolStripMenuItem.Text,
+                    settingsToolStripMenuItem.Text,
+                    exitToolStripMenuItem.Text,
+                    scientificToolStripMenuItem.Text,
+                    programmerToolStripMenuItem.Text,
+                    statisticsToolStripMenuItem.Text,
+                    standartToolStripMenuItem.Text,
+
+                };
+
+
+                for (int item = 0; item < 8; item++)
+                {
+                    var result = wc.DownloadString($"https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180519T085039Z.2c50b69f58c34887.7d37dc64e412a4142605130cdb6705d8e840df03&%20&text={texts[item]}&lang={Options.Language}");
+                    var data = JObject.Parse(result);
+                    texts[item] = (string)data["text"][0];
+                }
+
+                TextChange(texts);
+            }
+        }
+
         private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var wnd = new FormSettings();
             var res = wnd.ShowDialog();
-            using (WebClient wc = new WebClient())
-            {
-                wc.Encoding = Encoding.UTF8;
-                var result = wc.DownloadString($"https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20180519T085039Z.2c50b69f58c34887.7d37dc64e412a4142605130cdb6705d8e840df03&%20&text={newToolStripMenuItem.Text}&lang={Options.Language}");
-                var data = JObject.Parse(result);
-                MessageBox.Show((string)data["text"][0]);
-                newToolStripMenuItem.Text = (string)data["text"][0];
-            }
+
+            WebClient();
+
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
