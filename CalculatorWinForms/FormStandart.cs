@@ -120,6 +120,92 @@ namespace CalculatorWinForms
             Close();
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.NumPad1 || keyData == Keys.D1)
+            {
+                btnNumber1.PerformClick();
+                btnNumber1.Focus();
+            }
+            else if (keyData == Keys.NumPad2 || keyData == Keys.D2)
+            {
+                btnNumber2.PerformClick();
+                btnNumber2.Focus();
+            }
+            else if (keyData == Keys.NumPad3 || keyData == Keys.D3)
+            {
+                btnNumber3.PerformClick();
+                btnNumber3.Focus();
+            }
+            else if (keyData == Keys.NumPad4 || keyData == Keys.D4)
+            {
+                btnNumber4.PerformClick();
+                btnNumber4.Focus();
+            }
+            else if (keyData == Keys.NumPad5 || keyData == Keys.D5)
+            {
+                btnNumber5.PerformClick();
+                btnNumber5.Focus();
+            }
+            else if (keyData == Keys.NumPad6 || keyData == Keys.D6)
+            {
+                btnNumber6.PerformClick();
+                btnNumber6.Focus();
+            }
+            else if (keyData == Keys.NumPad7 || keyData == Keys.D7)
+            {
+                btnNumber7.PerformClick();
+                btnNumber7.Focus();
+            }
+            else if (keyData == Keys.NumPad8 || keyData == Keys.D8)
+            {
+                btnNumber8.PerformClick();
+                btnNumber8.Focus();
+            }
+            else if (keyData == Keys.NumPad9 || keyData == Keys.D9)
+            {
+                btnNumber9.PerformClick();
+                btnNumber9.Focus();
+            }
+            else if (keyData == Keys.NumPad0 || keyData == Keys.D0)
+            {
+                btnNumber0.PerformClick();
+                btnNumber0.Focus();
+            }
+            else if (keyData == Keys.Add || keyData == (Keys.Shift |Keys.Oemplus))
+            {
+                btnPlusSign.PerformClick();
+                btnPlusSign.Focus();
+            }
+            else if (keyData == Keys.Subtract || keyData == Keys.OemMinus)
+            {
+                btnMinusSign.PerformClick();
+                btnMinusSign.Focus();
+            }
+            else if (keyData == Keys.Divide)
+            {
+                btnDivSign.PerformClick();
+                btnDivSign.Focus();
+            }
+            else if (keyData == Keys.Multiply || keyData == (Keys.Shift | Keys.D8))
+            {
+                btnMultSign.PerformClick();
+                btnMultSign.Focus();
+            }
+            else if (keyData == Keys.Enter || keyData == Keys.Oemplus)
+            {
+                btnEqualSign.PerformClick();
+                btnEqualSign.Focus();
+            }
+            else if (keyData == Keys.Back)
+            {
+                btnBackspace.PerformClick();
+                btnBackspace.Focus();
+            }
+
+            return true;
+        }
+
         private void BtnNumber_Click(object sender, EventArgs e)
         {
             try
